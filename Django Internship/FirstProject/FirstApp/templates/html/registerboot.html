@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid bg-success">
+		<h2>Registration Form</h2>
+	</div>
+	<form action="{% url 'register' %}" method="post">
+	{% csrf_token %}
+	<div>
+		<h2 class="text-primary">Enter your Personal Details:</h2>
+	</div>
+	<label>Enter your First name</label><br>
+	<input type="text" name="firstname" placeholder="Enter your first Name"><br>
+	<label>Enter your Last name</label><br>
+	<input type="text" name="lastname" placeholder="Enter your last name"><br>
+	<label>Enter your Email-Address</label><br>
+	<input type="email" name="email" placeholder="Enter your emailID"><br>
+	<label>Enter your Address</label><br>
+	<input type="text" name="address" placeholder="Enter your address here"><br>
+	<h3 class="text-warning">Select Gender</h3>
+	<input type="radio" name="gender" value="Male">
+	<label for="Male">Male</label><br>
+	<input type="radio" name="gender" value="Female">
+	<label for="Female">Female</label><br>
+	<h3 class="text-secondary">Enter your mobile number</h3><br>
+	<input type="text" name="phonenumber" placeholder="Enter your phonenumber"><br>
+	<h3 class="text-success">Enter your known languages</h3><br>
+	<label>English</label>
+	<input type="checkbox" name="lang" value="English"><br>
+	<label>Telugu</label>
+	<input type="checkbox" name="lang" value="Telugu"><br>
+	<label>Hindi</label>
+	<input type="checkbox" name="lang" value="Hindi"><br>
+	<label>Tamil</label>
+	<input type="checkbox" name="lang" value="Tamil"><br>
+	<input type="submit" name="submit" value="Submit Here">
+</form>
+</body>
+</html>

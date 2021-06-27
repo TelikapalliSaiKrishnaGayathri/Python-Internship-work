@@ -1,0 +1,16 @@
+div
+{
+    margin-left: 230px;
+    margin-right: 230px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: lightskyblue;
+}
+h3
+{
+	background-color: green
+    text-align: center;
+    color: white;
+    padding: 15px;
+    border: groove;
+}
