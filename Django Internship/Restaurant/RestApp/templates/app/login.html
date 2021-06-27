@@ -1,0 +1,27 @@
+{% extends 'app/base.html' %}
+{% block title%}Contact{% endblock %}
+{% block content %}
+<div class="container bg-warning">
+  <div class="jumbotron bg-warning mt-4">
+    <h3>Login Page</h3>
+  </div>
+</div>
+<body>
+<form>
+	<div class="container bg-primary mt-4">
+		<div class="container-fluid bg-secondary my-2">
+			<label>Enter your Name</label><br>
+		</div>
+	<input type="text" name="name" placeholder="Enter your first Name"><br>
+	<div class="container-fluid bg-secondary my-2">
+			<label>Enter your Email</label><br>
+		</div>
+	<input type="email" name="email" placeholder="Enter your Email ID"><br>
+	<div>
+		<input type="submit" name="submit"class="btn btn-success my-2" value="Login">
+	</div>
+	
+	</div>
+</form>
+
+{% endblock %}
